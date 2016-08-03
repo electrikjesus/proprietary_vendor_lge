@@ -18,7 +18,9 @@
 DEVICE_PACKAGE_OVERLAYS := vendor/lge/msm8226-common/overlay
 
 PRODUCT_PACKAGES += \
-    shutdownlistener
+    shutdownlistener \
+    QuicksetSDK \
+    QuickRemote
 
 PRODUCT_PACKAGES += \
     libtime_genoff \
@@ -34,7 +36,10 @@ PRODUCT_PACKAGES += \
     libqmi_csi \
     libqmi_cci \
     libqmi_common_so \
-    libdsi_netctrl
+    libdsi_netctrl \
+    liblgewg \
+    libirrcClient \
+    libirrc
 
 #com.qualcomm.services.location
 $(call inherit-product, vendor/lge/msm8226-common/msm8226-common-vendor-blobs.mk)
